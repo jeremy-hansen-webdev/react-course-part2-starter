@@ -1,10 +1,10 @@
 import { Dispatch } from 'react';
-import { LoginOut } from '../reducers/authReducer';
+import { Authorized } from './AuthProvider';
 import React from 'react';
 
 interface AuthContextType {
   user: string;
-  authDispatch: Dispatch<LoginOut>;
+  dispatch: Dispatch<Authorized>;
 }
 
 export const AuthContext = React.createContext<AuthContextType>(
